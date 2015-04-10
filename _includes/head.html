@@ -10,24 +10,5 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <script src="/scripts/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript">
-$(function(){
-    $("#gotop").click(function(){
-        jQuery("html,body").animate({
-            scrollTop:0
-        }, 500);
-    });
-    $(window).load(function() {
-		$('#gotop').hide();
-    })
-    
-    $(window).scroll(function() {
-        if ( $(this).scrollTop() > 300){
-            $('#gotop').fadeIn("fast");
-        } else {
-            $('#gotop').stop().fadeOut("fast");
-        }
-    });
-});
-</script>
+  <script src="/scripts/pithy.js"></script>
 </head>
