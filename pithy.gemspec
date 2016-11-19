@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "pithy"
-  spec.version       = "0.1.0"
-  spec.authors       = ["Gregor Sturm"]
+  spec.version       = "0.1.1"
+  spec.authors       = ["Gregor Sturm", "smallmuou"]
   spec.email         = ["mail@gregor-sturm.de"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "simplistic jekyll theme"
+  spec.homepage      = "https://github.com/grst/Jekyll-Pithy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
