@@ -5,10 +5,32 @@ Jekyll-Pithy is a theme for Jekyll. Here is [my blog](http://wenva.github.io) wh
 ![image](https://raw.githubusercontent.com/smallmuou/Jekyll-Pithy/master/images/Jekyll-Pithy.png)
 
 ### Usage
-* Clone it.
-* cd Jekyll-Pithy, and Run "jekyll serve"(You must install [jekyll](http://jekyllrb.com/) first)
-* Open web browser and enter "http://127.0.0.1:4000/", you can see the web page like snapshot above.
-* If you want to host you blog on Github Page, you can follow the steps provide by Github.
+1. Setup a new jekyll site 
+  ```sh
+  gem install jekyll bundler
+  jekyll new my-awesome-site
+  ```
+
+2. Add the `pithy` theme to your `Gemfile`
+  ```
+  gem "pithy"
+  ```
+
+3. Adjust your `_config.yml` 
+  ```yaml
+  theme: pithy
+  ```
+
+4. Install the theme using bundler
+  ```
+  bundle install
+  ```
+
+5. Serve and enjoy!
+  ```
+  bundle exec jekyll serve
+  ```
+
 
 ### License
 The code follows MIT License.
